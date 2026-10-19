@@ -31,6 +31,6 @@ npm run preview
 
 미리보기 주소: `http://127.0.0.1:4173`
 
-GitHub Pages는 `main` 브랜치의 루트에서 사이트 파일을 제공합니다. 변경 전 로컬에서 링크·콘텐츠 검사와 TypeScript 검사를 실행합니다.
+GitHub Actions는 `main` 변경 시 링크·콘텐츠 검사와 TypeScript 검사를 마친 뒤 공개 사이트 파일만 GitHub Pages에 배포합니다.
 
 
