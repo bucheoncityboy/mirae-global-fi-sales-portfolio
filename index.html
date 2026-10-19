@@ -84,7 +84,11 @@
                 <li><span>04</span><div><strong>담당자 확인</strong><small>예외와 불일치 항목</small></div><b>REVIEW</b></li>
                 <li><span>05</span><div><strong>Excel 반영</strong><small>확인 완료 항목만 입력</small></div><b>UPDATE</b></li>
               </ol>
-              <div class="settlement-result"><strong>0</strong><span>담당 기간 정산 오류</span><small>3개월 · 2024.09–12</small></div>
+              <div class="settlement-result">
+                <strong>0</strong>
+                <span>담당 기간 정산 오류</span>
+                <small>3개월 · 2024.09–12</small>
+              </div>
             </aside>
           </article>
 
@@ -102,11 +106,24 @@
               <p class="side-label">IMPLEMENTED DATA FLOW</p>
               <div class="briefing-engine">
                 <div class="engine-inputs">
-                  <div><strong>U.S.</strong><span>Cboe session</span><small>Treasury · Cboe</small></div>
-                  <div><strong>Korea</strong><span>ECOS session</span><small>ECOS</small></div>
+                  <div>
+                    <strong>U.S. SESSION</strong>
+                    <span>거래일 판별</span>
+                    <small>원천 · Treasury · Cboe</small>
+                  </div>
+                  <div>
+                    <strong>KOREA SESSION</strong>
+                    <span>관측일 판별</span>
+                    <small>원천 · ECOS</small>
+                  </div>
                 </div>
                 <div class="engine-arrow" aria-hidden="true">↓</div>
-                <div class="engine-checks"><span>Observed date</span><span>Unit &amp; basis</span><span>Stale exclusion</span><span>Source failures</span></div>
+                <div class="engine-checks" aria-label="주요 검증 항목">
+                  <span>Observed date</span>
+                  <span>Unit &amp; basis</span>
+                  <span>Stale exclusion</span>
+                  <span>Source failures</span>
+                </div>
                 <div class="engine-arrow" aria-hidden="true">↓</div>
                 <div class="engine-output"><strong>7-section briefing</strong><span>Evidence-linked research memo</span></div>
               </div>
