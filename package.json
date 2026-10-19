@@ -1,0 +1,16 @@
+{
+  "name": "mirae-global-fi-sales-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsx src/harness.ts",
+    "typecheck": "tsc --noEmit",
+    "preview": "tsx src/serve.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9.3"
+  }
+}
+
